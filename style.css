@@ -1,9 +1,8 @@
-/* General page styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #fff;
+  background-color: #ffffff; /* white background */
+  color: #111; /* dark text for readability */
 }
 
 #container {
@@ -17,7 +16,7 @@ header {
   text-align: center;
   padding: 15px;
   background-color: #ffff33; /* yellow */
-  color: #111;
+  color: #111; /* dark text */
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -26,8 +25,9 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: #ffffff; /* white */
-  color: #111;
+  color: #111; /* dark text */
   font-size: 0.9em;
+  border-top: 1px solid #ccc; /* subtle separation */
 }
 
 /* Main layout */
@@ -42,7 +42,9 @@ footer {
 main {
   flex: 2;
   padding: 10px;
-  background-color: #1a1a1a;
+  background-color: #f9f9f9; /* very light gray for contrast */
+  color: #111; /* dark text */
+  border-radius: 5px;
 }
 
 /* Sidebar */
@@ -56,8 +58,9 @@ main {
 /* Sidebar sections */
 .sidebar-section {
   padding: 10px;
-  color: #fff;
   border-radius: 5px;
+  color: #fff; /* keep text white on colored sidebars */
+  font-weight: bold;
 }
 
 .red {
@@ -72,12 +75,14 @@ main {
   background-color: #4dff4d;
 }
 
-/* Lists */
+/* Lists inside sidebars */
 .sidebar-section ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 5px 0 0 0;
 }
 
 .sidebar-section li {
   margin-bottom: 5px;
+  font-weight: normal; /* slightly lighter than section title */
 }
